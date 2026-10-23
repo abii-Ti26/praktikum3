@@ -1,0 +1,272 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #1e293b;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 25px;
+        }
+
+        header p {
+            color: #cbd5e1;
+            font-size: 14px;
+        }
+
+        nav {
+            background: #1e293b;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            background: #2563eb;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 25px auto;
+            padding: 0 15px;
+        }
+
+        main {
+            background: white;
+            padding: 25px;
+            border-radius: 14px;
+            box-shadow: 0 4px 15px #00000010;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+
+        .foto {
+            width: 160px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #e2e8f0;
+        }
+
+        .biodata h2 {
+            font-size: 26px;
+            color: #0f172a;
+            margin-bottom: 10px;
+        }
+
+        .biodata p {
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        section {
+            margin-top: 30px;
+        }
+
+        section h2 {
+            font-size: 21px;
+            color: #0f172a;
+            border-left: 4px solid #2563eb;
+            padding-left: 10px;
+            margin-bottom: 12px;
+        }
+
+        .deskripsi p {
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+        aside {
+            background: #eff6ff;
+            border-radius: 10px;
+            padding: 18px;
+            margin-top: 25px;
+        }
+
+        aside h3 {
+            color: #1d4ed8;
+            margin-bottom: 8px;
+        }
+
+        aside ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 30px;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            main {
+                padding: 18px;
+            }
+
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .foto {
+                width: 150px;
+                height: 170px;
+            }
+
+            .biodata h2 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>MY PERSONAL PROFILE</h1>
+        <p>Mengenal lebih dekat tentang diri saya</p>
+    </header>
+
+    <!-- NAVIGASI -->
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#tentang">Tentang Saya</a>
+        <a href="#keahlian">Keahlian</a>
+    </nav>
+
+    <div class="container">
+
+        <main>
+
+            <!-- PROFIL DAN BIODATA -->
+            <article id="profil">
+
+                <div class="profile">
+
+                    <img
+                        src="Foto profil.jpg"
+                        alt="Foto profil pribadi"
+                        class="foto"
+                    >
+
+                    <div class="biodata">
+                        <h2>Abi bakrin lubis</h2>
+
+                        <strong>Tempat, Tanggal Lahir: padang,29-09-2006</strong>
+                            
+
+                        <p><strong>Alamat:srengseng sawah</strong>
+                            </p>
+
+                        <p><strong>Pendidikan:</strong>
+                            Teknik Informatika</p>
+
+                        <p><strong>Kampus:</strong>
+                            STT Terpadu Nurul Fikri</p>
+
+                        <p><strong>Email:</strong>
+                            @abibakrin</p>
+
+                        <p><strong>Hobi:</strong>
+                            Belajar dan membaca</p>
+                    </div>
+
+                </div>
+
+                <!-- DESKRIPSI DIRI -->
+                <section id="tentang" class="deskripsi">
+
+                    <h2>Tentang Saya</h2>
+
+                    <p>
+                        Halo, perkenalkan nama saya Abi bakrin lubis.
+                        Saya adalah mahasiswa Teknik Informatika di
+                        STT Terpadu Nurul Fikri. Saya merupakan pribadi
+                        yang memiliki semangat untuk terus belajar,
+                        mencoba hal baru, dan mengembangkan kemampuan
+                        diri. Saya percaya bahwa setiap proses
+                        membutuhkan usaha, kesabaran, dan konsistensi
+                        untuk mencapai hasil yang baik.
+                    </p>
+
+                    <p>
+                        Saya tertarik mempelajari teknologi,
+                        khususnya pemrograman dan kecerdasan buatan.
+                        Saya ingin memperluas pengetahuan serta
+                        meningkatkan keterampilan agar mampu
+                        menciptakan sesuatu yang bermanfaat bagi
+                        orang lain. Bagi saya, menjadi lebih baik
+                        setiap hari merupakan bagian penting
+                        dari perjalanan menuju masa depan.
+                    </p>
+
+                </section>
+
+            </article>
+
+            <!-- KEAHLIAN DAN MINAT -->
+            <aside id="keahlian">
+
+                <h3>Keahlian dan Minat</h3>
+
+                <ul>
+                    <li>Pemrograman komputer</li>
+                    <li>Pengembangan website</li>
+                    
+                    <li>Berpikir logis dan pemecahan masalah</li>
+                </ul>
+
+            </aside>
+
+        </main>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 My Personal Profile</p>
+        <p>Dibuat untuk Praktikum Desain UI/UX Pemrograman Web</p>
+    </footer>
+
+</body>
+</html>
